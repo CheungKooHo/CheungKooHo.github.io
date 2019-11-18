@@ -8,16 +8,16 @@
   <link rel="dns-prefetch" href="https://cheungkooho.github.io">
   <title>web网页版简易音乐播放器实现 | CheungKooHo&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="下面我们做一个网页版简易音乐播放器Lat’s do it!  HTML代码12345678910111213141516171819202122232425262728293031&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;	&amp;lt;head&amp;gt;		&amp;lt;meta charset=&amp;quot;utf-8&amp;quot; &#x2F;&amp;gt;		&amp;lt;title&amp;gt;音乐播放器&amp;l">
+  <meta name="description" content="下面我们做一个网页版简易音乐播放器Lat’s do it!">
 <meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
 <meta property="og:type" content="article">
 <meta property="og:title" content="web网页版简易音乐播放器实现">
 <meta property="og:url" content="https:&#x2F;&#x2F;cheungkooho.github.io&#x2F;2019&#x2F;11&#x2F;18&#x2F;web%E7%BD%91%E9%A1%B5%E7%89%88%E7%AE%80%E6%98%93%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E5%AE%9E%E7%8E%B0&#x2F;index.html">
 <meta property="og:site_name" content="CheungKooHo&#39;s Blog">
-<meta property="og:description" content="下面我们做一个网页版简易音乐播放器Lat’s do it!  HTML代码12345678910111213141516171819202122232425262728293031&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;	&amp;lt;head&amp;gt;		&amp;lt;meta charset=&amp;quot;utf-8&amp;quot; &#x2F;&amp;gt;		&amp;lt;title&amp;gt;音乐播放器&amp;l">
+<meta property="og:description" content="下面我们做一个网页版简易音乐播放器Lat’s do it!">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;20159262-2bf8da9f0de81da9.png?imageMogr2&#x2F;auto-orient&#x2F;strip%7CimageView2&#x2F;2&#x2F;w&#x2F;1240">
-<meta property="og:updated_time" content="2019-11-18T13:32:17.216Z">
+<meta property="og:updated_time" content="2019-11-18T13:34:34.266Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;20159262-2bf8da9f0de81da9.png?imageMogr2&#x2F;auto-orient&#x2F;strip%7CimageView2&#x2F;2&#x2F;w&#x2F;1240">
   
@@ -184,6 +184,8 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="下面我们做一个网页版简易音乐播放器"><a href="#下面我们做一个网页版简易音乐播放器" class="headerlink" title="下面我们做一个网页版简易音乐播放器"></a>下面我们做一个网页版简易音乐播放器</h2><p>Lat’s do it!</p>
+<a id="more"></a>
+
 <hr>
 <h2 id="HTML代码"><a href="#HTML代码" class="headerlink" title="HTML代码"></a>HTML代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;utf-8&quot; /&gt;</span><br><span class="line">		&lt;title&gt;音乐播放器&lt;/title&gt;</span><br><span class="line">		&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/index.css&quot;/&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;header&gt;音乐播放器&lt;/header&gt;</span><br><span class="line">		&lt;section&gt;</span><br><span class="line">			&lt;ul&gt;</span><br><span class="line">				&lt;li&gt;Here We Are Again&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;不谓侠&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;多想在平庸的生活拥抱你&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;浪子回头&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;那个女孩&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;那女孩对我说&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;平胸女子&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;情深深雨濛濛&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;雅俗共赏&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;野狼disco&lt;/li&gt;</span><br><span class="line">				&lt;li&gt;这一生关于你的风景&lt;/li&gt;</span><br><span class="line">			&lt;/ul&gt;</span><br><span class="line">		&lt;/section&gt;</span><br><span class="line">		&lt;audio src=&quot;&quot; id=&quot;ado&quot; controls=&quot;controls&quot;&gt;&lt;/audio&gt;</span><br><span class="line">		&lt;footer&gt;</span><br><span class="line">			当前播放的是：&lt;span id=&quot;con&quot;&gt;&lt;/span&gt;</span><br><span class="line">		&lt;/footer&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">	&lt;script src=&quot;js/index.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
@@ -459,7 +461,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">HTML标签</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -467,7 +469,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">HTML标签</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">随笔</a>
               </li>
             
             <div class="clearfix"></div>
