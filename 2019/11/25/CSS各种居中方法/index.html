@@ -8,21 +8,21 @@
   <link rel="dns-prefetch" href="https://cheungkooho.github.io">
   <title>CSS各种居中方法 | CheungKooHo&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一、水平居中1、文本&#x2F;行内元素&#x2F;行内块级元素原理：text-align只控制行内内容(文字、行内元素、行内块级元素)如何相对他的块父元素对齐 123#parent&amp;#123;    text-align: center;&amp;#125; 优缺点·优点：简单快捷，容易理解，兼容性非常好·缺点：只对行内内容有效；属性会继承影响到后代行内内容；如果子元素宽度大于父元素宽度则无效，只有后代行内内容中宽度小于设">
+  <meta name="description" content="CSS布局中常用的各种居中方法">
 <meta name="keywords" content="CSS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CSS各种居中方法">
 <meta property="og:url" content="https:&#x2F;&#x2F;cheungkooho.github.io&#x2F;2019&#x2F;11&#x2F;25&#x2F;CSS%E5%90%84%E7%A7%8D%E5%B1%85%E4%B8%AD%E6%96%B9%E6%B3%95&#x2F;index.html">
 <meta property="og:site_name" content="CheungKooHo&#39;s Blog">
-<meta property="og:description" content="一、水平居中1、文本&#x2F;行内元素&#x2F;行内块级元素原理：text-align只控制行内内容(文字、行内元素、行内块级元素)如何相对他的块父元素对齐 123#parent&amp;#123;    text-align: center;&amp;#125; 优缺点·优点：简单快捷，容易理解，兼容性非常好·缺点：只对行内内容有效；属性会继承影响到后代行内内容；如果子元素宽度大于父元素宽度则无效，只有后代行内内容中宽度小于设">
+<meta property="og:description" content="CSS布局中常用的各种居中方法">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-25T05:50:27.942Z">
+<meta property="og:updated_time" content="2019-11-25T12:20:51.571Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="CheungKooHo&#39;s Blog" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/favicon.ico">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
   <style type="text/css">
@@ -181,7 +181,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="一、水平居中"><a href="#一、水平居中" class="headerlink" title="一、水平居中"></a>一、水平居中</h2><h3 id="1、文本-行内元素-行内块级元素"><a href="#1、文本-行内元素-行内块级元素" class="headerlink" title="1、文本/行内元素/行内块级元素"></a>1、文本/行内元素/行内块级元素</h3><p>原理：text-align只控制行内内容(文字、行内元素、行内块级元素)如何相对他的块父元素对齐</p>
+        <p>CSS布局中常用的各种居中方法</p>
+<a id="more"></a>
+
+<h2 id="一、水平居中"><a href="#一、水平居中" class="headerlink" title="一、水平居中"></a>一、水平居中</h2><h3 id="1、文本-行内元素-行内块级元素"><a href="#1、文本-行内元素-行内块级元素" class="headerlink" title="1、文本/行内元素/行内块级元素"></a>1、文本/行内元素/行内块级元素</h3><p>原理：text-align只控制行内内容(文字、行内元素、行内块级元素)如何相对他的块父元素对齐</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#parent&#123;</span><br><span class="line">    text-align: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>优缺点<br>·优点：简单快捷，容易理解，兼容性非常好<br>·缺点：只对行内内容有效；属性会继承影响到后代行内内容；如果子元素宽度大于父元素宽度则无效，只有后代行内内容中宽度小于设置text-align属性的元素宽度的时候，才会水平居中</p>
 <h3 id="2、单个块级元素"><a href="#2、单个块级元素" class="headerlink" title="2、单个块级元素"></a>2、单个块级元素</h3><p>原理：根据规范，有这么一种情况：在margin有节余的同时如果左右margin设置了auto，将会均分剩余空间。另外，如果上下的margin设置了auto，其计算值为0</p>
@@ -357,6 +360,15 @@
   
 <nav id="article-nav">
   
+    <a href="/2019/11/25/div+CSS%E5%B8%83%E5%B1%80/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          CSS浮动清除
+        
+      </div>
+    </a>
+  
   
     <a href="/2019/11/21/CSS%E6%B5%AE%E5%8A%A8%E6%B8%85%E9%99%A4/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">CSS浮动清除</div>
@@ -520,11 +532,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">HTML标签</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">Markdown</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">Markdown</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color2">HTML标签</a>
               </li>
              
               <li class="article-tag-list-item">
