@@ -6,18 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://cheungkooho.github.io">
-  <title>HTML基础标签 | CheungKooHo&#39;s Blog</title>
+  <title>看透网页布局本质————CSS盒模型详解 | CheungKooHo&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="HTML基础标签">
-<meta name="keywords" content="HTML">
+  <meta name="description" content="页面布局的学习有三大核心，分别是盒子模型、浮动、定位。CSS的盒模型是CSS的基础，同时也是难点，也是面试的考点。所以，学好盒子模型，就成了前端开发者的重中之重，对盒模型有了正确的认识就能很好的帮助我们布局页面。">
+<meta name="keywords" content="CSS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HTML基础标签">
-<meta property="og:url" content="https:&#x2F;&#x2F;cheungkooho.github.io&#x2F;2019&#x2F;11&#x2F;17&#x2F;HTML%E5%9F%BA%E7%A1%80%E6%A0%87%E7%AD%BE&#x2F;index.html">
+<meta property="og:title" content="看透网页布局本质————CSS盒模型详解">
+<meta property="og:url" content="https:&#x2F;&#x2F;cheungkooho.github.io&#x2F;2019&#x2F;12&#x2F;27&#x2F;%E7%9C%8B%E9%80%8F%E7%BD%91%E9%A1%B5%E5%B8%83%E5%B1%80%E6%9C%AC%E8%B4%A8%E2%80%94%E2%80%94%E2%80%94%E2%80%94CSS%E7%9B%92%E6%A8%A1%E5%9E%8B%E8%AF%A6%E8%A7%A3&#x2F;index.html">
 <meta property="og:site_name" content="CheungKooHo&#39;s Blog">
-<meta property="og:description" content="HTML基础标签">
+<meta property="og:description" content="页面布局的学习有三大核心，分别是盒子模型、浮动、定位。CSS的盒模型是CSS的基础，同时也是难点，也是面试的考点。所以，学好盒子模型，就成了前端开发者的重中之重，对盒模型有了正确的认识就能很好的帮助我们布局页面。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-26T07:45:21.539Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;12&#x2F;27&#x2F;fSnmLGTiyeXz8dP.gif">
+<meta property="og:image" content="https:&#x2F;&#x2F;s2.ax1x.com&#x2F;2019&#x2F;12&#x2F;27&#x2F;lZ2jBT.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;12&#x2F;27&#x2F;UHCwJPRj9y1MOXQ.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;12&#x2F;27&#x2F;c1D3aAmMLKN9Hg5.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;s2.ax1x.com&#x2F;2019&#x2F;12&#x2F;27&#x2F;lZ4yl9.png">
+<meta property="og:updated_time" content="2019-12-27T14:59:55.609Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;12&#x2F;27&#x2F;fSnmLGTiyeXz8dP.gif">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -148,14 +154,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-HTML基础标签" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-看透网页布局本质————CSS盒模型详解" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      HTML基础标签
+      看透网页布局本质————CSS盒模型详解
     </h1>
   
 ,
@@ -171,221 +177,59 @@
 				
 				<!--显示阅读次数完毕-->
         
-        <a href="/2019/11/17/HTML%E5%9F%BA%E7%A1%80%E6%A0%87%E7%AD%BE/" class="archive-article-date">
-  	<time datetime="2019-11-17T12:57:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-17</time>
+        <a href="/2019/12/27/%E7%9C%8B%E9%80%8F%E7%BD%91%E9%A1%B5%E5%B8%83%E5%B1%80%E6%9C%AC%E8%B4%A8%E2%80%94%E2%80%94%E2%80%94%E2%80%94CSS%E7%9B%92%E6%A8%A1%E5%9E%8B%E8%AF%A6%E8%A7%A3/" class="archive-article-date">
+  	<time datetime="2019-12-27T11:56:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-27</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="HTML基础标签"><a href="#HTML基础标签" class="headerlink" title="HTML基础标签"></a>HTML基础标签</h1><a id="more"></a>
+        <p>页面布局的学习有三大核心，分别是<em>盒子模型、浮动、定位</em>。<br>CSS的盒模型是CSS的基础，同时也是难点，也是面试的考点。所以，学好盒子模型，就成了前端开发者的重中之重，对盒模型有了正确的认识就能很好的帮助我们布局页面。</p>
+<a id="more"></a>
 
-<hr>
-<table>
-<thead>
-<tr>
-<th>标签</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>&lt;!DOCTYPE&gt;</code></td>
-<td>定义文档类型。</td>
-</tr>
-<tr>
-<td><code>&lt;html&gt;</code></td>
-<td>定义 HTML 文档。</td>
-</tr>
-<tr>
-<td><code>&lt;title&gt;</code></td>
-<td>定义文档的标题。</td>
-</tr>
-<tr>
-<td><code>&lt;body&gt;</code></td>
-<td>定义文档的主体。</td>
-</tr>
-<tr>
-<td><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code></td>
-<td>定义 HTML 标题。</td>
-</tr>
-<tr>
-<td><code>&lt;p&gt;</code></td>
-<td>定义段落。</td>
-</tr>
-<tr>
-<td><code>&lt;br&gt;</code></td>
-<td>定义简单的折行。</td>
-</tr>
-<tr>
-<td><code>&lt;hr&gt;</code></td>
-<td>定义水平线。</td>
-</tr>
-<tr>
-<td><code>&lt;!--...--&gt;</code></td>
-<td>定义注释。</td>
-</tr>
-</tbody></table>
-<hr>
-<h2 id="lt-DOCTYPE-gt-标签"><a href="#lt-DOCTYPE-gt-标签" class="headerlink" title="&lt;!DOCTYPE&gt; 标签"></a><code>&lt;!DOCTYPE&gt;</code> 标签</h2><h4 id="定义和用法"><a href="#定义和用法" class="headerlink" title="定义和用法"></a>定义和用法</h4><p><code>&lt;!DOCTYPE&gt;</code> 声明必须是 HTML 文档的第一行，位于 <code>&lt;html&gt;</code> 标签之前。</p>
-<!DOCTYPE><p> 声明不是 HTML 标签；它是指示 web 浏览器关于页面使用哪个 HTML 版本进行编写的指令。</p>
-<p>在 HTML 4.01 中，&lt;!DOCTYPE&gt; 声明引用 DTD，因为 HTML 4.01 基于 SGML。DTD 规定了标记语言的规则，这样浏览器才能正确地呈现内容。</p>
-<p>HTML5 不基于 SGML，所以不需要引用 DTD。</p>
-<p><strong>提示</strong>：请始终向 HTML 文档添加 &lt;!DOCTYPE&gt; 声明，这样浏览器才能获知文档类型。</p>
+<h2 id="盒模型的组成部分"><a href="#盒模型的组成部分" class="headerlink" title="盒模型的组成部分"></a>盒模型的组成部分</h2><p>在菜鸟教程中对CSS盒子模型的描述是这样的：</p>
 <blockquote>
-<p>HTML 4.01 与 HTML5 之间的差异<br>在 HTML 4.01 中有三种 &lt;!DOCTYPE&gt; 声明。在 HTML5 中只有一种：<br><code>&lt;!DOCTYPE html&gt;</code></p>
+<p>所有HTML元素可以看作盒子，在CSS中，”box model”这一术语是用来设计和布局时使用。</p>
 </blockquote>
-<h4 id="提示和注释"><a href="#提示和注释" class="headerlink" title="提示和注释"></a>提示和注释</h4><p><strong>注释</strong>：&lt;!DOCTYPE&gt; 声明没有结束标签。<br><strong>提示</strong>：&lt;!DOCTYPE&gt; 声明对大小写不敏感。</p>
-<hr>
-<h2 id="lt-html-gt-标签"><a href="#lt-html-gt-标签" class="headerlink" title="&lt;html&gt; 标签"></a><code>&lt;html&gt;</code> 标签</h2><h4 id="定义和用法-1"><a href="#定义和用法-1" class="headerlink" title="定义和用法"></a>定义和用法</h4><p>此元素可告知浏览器其自身是一个 HTML 文档。</p>
-<p><code>&lt;html&gt;</code> 与 <code>&lt;/html&gt;</code> 标签限定了文档的开始点和结束点，在它们之间是文档的头部和主体。</p>
-<h4 id="提示和注释-1"><a href="#提示和注释-1" class="headerlink" title="提示和注释"></a>提示和注释</h4><p><strong>注释</strong>：即使 html 元素是文档的根元素，它也不包含 doctype 元素。doctype 元素必须位于 html 元素之前。</p>
-<h4 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h4><table>
-<thead>
-<tr>
-<th>属性</th>
-<th>值</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>manifest</td>
-<td>url</td>
-<td>定义一个 URL，在这个 URL 上描述了文档的缓存信息。</td>
-</tr>
-<tr>
-<td>xmlns</td>
-<td></td>
-<td>定义 XML namespace 属性。</td>
-</tr>
-</tbody></table>
-<hr>
-<h2 id="lt-title-gt-标签"><a href="#lt-title-gt-标签" class="headerlink" title="&lt;title&gt; 标签"></a><code>&lt;title&gt;</code> 标签</h2><h4 id="定义和用法-2"><a href="#定义和用法-2" class="headerlink" title="定义和用法"></a>定义和用法</h4><p><code>&lt;title&gt;</code> 元素可定义文档的标题。</p>
-<p>浏览器会以特殊的方式来使用标题，并且通常把它放置在浏览器窗口的标题栏或状态栏上。同样，当把文档加入用户的链接列表或者收藏夹或书签列表时，标题将成为该文档链接的默认名称。</p>
-<h4 id="提示和注释-2"><a href="#提示和注释-2" class="headerlink" title="提示和注释"></a>提示和注释</h4><p><strong>提示</strong>：<code>&lt;title&gt;</code> 标签是 <code>&lt;head&gt;</code> 标签中唯一要求包含的东西。</p>
-<h4 id="标准属性"><a href="#标准属性" class="headerlink" title="标准属性"></a>标准属性</h4><p><code>&lt;title&gt;</code> 标签支持以下标准属性：</p>
-<table>
-<thead>
-<tr>
-<th>属性</th>
-<th>值</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>dir</td>
-<td>rtl ltr</td>
-<td>规定元素中内容的文本方向。</td>
-</tr>
-<tr>
-<td>lang</td>
-<td>language_code</td>
-<td>规定元素中内容的语言代码。</td>
-</tr>
-<tr>
-<td>xml:lang</td>
-<td>language_code</td>
-<td>规定 XHTML 文档中元素内容的语言代码。</td>
-</tr>
-</tbody></table>
-<hr>
-<h2 id="lt-body-gt-标签"><a href="#lt-body-gt-标签" class="headerlink" title="&lt;body&gt; 标签"></a><code>&lt;body&gt;</code> 标签</h2><h4 id="定义和用法-3"><a href="#定义和用法-3" class="headerlink" title="定义和用法"></a>定义和用法</h4><p>body 元素定义文档的主体。</p>
-<p>body 元素包含文档的所有内容（比如文本、超链接、图像、表格和列表等等。）</p>
-<h4 id="HTML-与-XHTML-之间的差异"><a href="#HTML-与-XHTML-之间的差异" class="headerlink" title="HTML 与 XHTML 之间的差异"></a>HTML 与 XHTML 之间的差异</h4><p>在 HTML 4.01 中，所有 body 元素的“呈现属性”均不被赞成使用。</p>
-<p>在 XHTML 1.0 Strict DTD 中，所有 body 元素的“呈现属性”均不被支持。</p>
-<h4 id="可选的属性"><a href="#可选的属性" class="headerlink" title="可选的属性"></a>可选的属性</h4><table>
-<thead>
-<tr>
-<th>属性</th>
-<th>值</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>alink</td>
-<td>rgb(x,x,x)<br>#xxxxxx<br>colorname</td>
-<td>不赞成使用。请使用样式取代它。<br> <br>规定文档中活动链接（active link）的的颜色。</td>
-</tr>
-<tr>
-<td>background</td>
-<td>URL</td>
-<td>不赞成使用。请使用样式取代它。</td>
-</tr>
-<tr>
-<td>bgcolor</td>
-<td>rgb(x,x,x)<br>#xxxxxx<br>colorname</td>
-<td>不赞成使用。请使用样式取代它。<br> <br>规定文档的背景颜色。</td>
-</tr>
-<tr>
-<td>link</td>
-<td>rgb(x,x,x)<br>#xxxxxx<br>colorname</td>
-<td>不赞成使用。请使用样式取代它。<br> <br>规定文档中未访问链接的默认颜色。</td>
-</tr>
-<tr>
-<td>text</td>
-<td>rgb(x,x,x)<br>#xxxxxx<br>colorname</td>
-<td>不赞成使用。请使用样式取代它。<br> <br>规定文档中所有文本的颜色。</td>
-</tr>
-<tr>
-<td>vlink</td>
-<td>rgb(x,x,x)<br>#xxxxxx<br>colorname</td>
-<td>不赞成使用。请使用样式取代它。<br><br>规定文档中已被访问链接的颜色。</td>
-</tr>
-</tbody></table>
-<hr>
-<h2 id="lt-h1-gt-到-lt-h6-gt-标签"><a href="#lt-h1-gt-到-lt-h6-gt-标签" class="headerlink" title="&lt;h1&gt; 到 &lt;h6&gt; 标签"></a><code>&lt;h1&gt;</code> 到 <code>&lt;h6&gt;</code> 标签</h2><h4 id="定义和用法-4"><a href="#定义和用法-4" class="headerlink" title="定义和用法"></a>定义和用法</h4><p><code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code> 标签可定义标题。<code>&lt;h1&gt;</code> 定义最大的标题。<code>&lt;h6&gt;</code> 定义最小的标题。</p>
-<p>由于 h 元素拥有确切的语义，因此请您慎重地选择恰当的标签层级来构建文档的结构。因此，请不要利用标题标签来改变同一行中的字体大小。相反，我们应当使用层叠样式表定义来达到漂亮的显示效果。</p>
-<h4 id="标准属性-1"><a href="#标准属性-1" class="headerlink" title="标准属性"></a>标准属性</h4><blockquote>
-<p>id, class, title, style, dir, lang, xml:lang</p>
-</blockquote>
-<h3 id="事件属性"><a href="#事件属性" class="headerlink" title="事件属性"></a>事件属性</h3><blockquote>
-<p>onclick, ondblclick, onmousedown, onmouseup, onmouseover,<br>onmousemove, onmouseout, onkeypress, onkeydown, onkeyup</p>
-</blockquote>
-<hr>
-<h2 id="lt-p-gt-标签"><a href="#lt-p-gt-标签" class="headerlink" title="&lt;p&gt; 标签"></a><code>&lt;p&gt;</code> 标签</h2><h4 id="定义和用法-5"><a href="#定义和用法-5" class="headerlink" title="定义和用法"></a>定义和用法</h4><p><code>&lt;p&gt;</code> 标签定义段落。</p>
-<p>p 元素会自动在其前后创建一些空白。浏览器会自动添加这些空间，您也可以在样式表中规定。</p>
-<hr>
-<h2 id="lt-br-gt-标签"><a href="#lt-br-gt-标签" class="headerlink" title="&lt;br&gt; 标签"></a><code>&lt;br&gt;</code> 标签</h2><h4 id="定义和用法-6"><a href="#定义和用法-6" class="headerlink" title="定义和用法"></a>定义和用法</h4><p><code>&lt;br&gt;</code> 可插入一个简单的换行符。</p>
-<p><code>&lt;br&gt;</code> 标签是空标签（意味着它没有结束标签，因此这是错误的：<code>&lt;br&gt;&lt;/br&gt;</code>）。在 XHTML 中，把结束标签放在开始标签中，也就是 <code>&lt;br /&gt;</code>。</p>
-<p>请注意，<code>&lt;br&gt;</code> 标签只是简单地开始新的一行，而当浏览器遇到 <code>&lt;p&gt;</code> 标签时，通常会在相邻的段落之间插入一些垂直的间距。</p>
-<h4 id="clear-属性"><a href="#clear-属性" class="headerlink" title="clear 属性"></a>clear 属性</h4><p>如果您希望文本流在内联表格或图像的下一行继续输出，请使用 clear 属性，该属性有三个可选的值：left、right 或者 all，每个值都代表一个边界或两边的边界。</p>
-<h4 id="提示和注释-3"><a href="#提示和注释-3" class="headerlink" title="提示和注释"></a>提示和注释</h4><p><strong>注释</strong>：请使用 <code>&lt;br&gt;</code> 来输入空行，而不是分割段落。</p>
-<hr>
-<h2 id="lt-hr-gt-标签"><a href="#lt-hr-gt-标签" class="headerlink" title="&lt;hr&gt; 标签"></a><code>&lt;hr&gt;</code> 标签</h2><h4 id="定义和用法-7"><a href="#定义和用法-7" class="headerlink" title="定义和用法"></a>定义和用法</h4><p><code>&lt;hr&gt;</code> 标签在 HTML 页面中创建一条水平线。</p>
-<p>水平分隔线（horizontal rule）可以在<strong>视觉上</strong>将文档分隔成各个部分。</p>
-<h4 id="可选的属性-1"><a href="#可选的属性-1" class="headerlink" title="可选的属性"></a>可选的属性</h4><table>
-<thead>
-<tr>
-<th>属性</th>
-<th>值</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>align</td>
-<td>center<br>left<br>right</td>
-<td>不赞成使用。请使用样式取代它。<br> <br>规定 hr 元素的对齐方式。</td>
-</tr>
-<tr>
-<td>noshade</td>
-<td>noshade</td>
-<td>不赞成使用。请使用样式取代它。<br>规定 hr 元素的颜色呈现为纯色。</td>
-</tr>
-<tr>
-<td>size</td>
-<td>pixels</td>
-<td>不赞成使用。请使用样式取代它。<br>规定 hr 元素的高度（厚度）。</td>
-</tr>
-<tr>
-<td>width</td>
-<td>pixels<br>%</td>
-<td>不赞成使用。请使用样式取代它。<br>规定 hr 元素的宽度。</td>
-</tr>
-</tbody></table>
-<hr>
-<h2 id="lt-gt-标签"><a href="#lt-gt-标签" class="headerlink" title="&lt;!--...--&gt;标签"></a><code>&lt;!--...--&gt;</code>标签</h2><h4 id="定义和用法-8"><a href="#定义和用法-8" class="headerlink" title="定义和用法"></a>定义和用法</h4><p>注释标签用于在源代码中插入注释。注释不会显示在浏览器中。</p>
-<p>您可使用注释对您的代码进行解释，这样做有助于您在以后的时间对代码的编辑。当您编写了大量代码时尤其有用。</p>
-<p>使用注释标签来隐藏浏览器不支持的脚本也是一个好习惯（这样就不会把脚本显示为纯文本）。</p>
+<p>那么也就是说，我们可以认为页面中的每一个元素标签就是一个个方块，然后这些方块被有序的摆放或者包裹使用，就形成了我们所看到的静态页面，这就是所谓的盒模型布局。所以，网页布局的本质，其实就是盒子的摆放问题。</p>
+<p>在CSS中，一个完整的盒子由<em>外边距(margin)、边框(border)、内边距(padding)、实际内容(content)</em>4部分组成。</p>
+<p>下面的图片说明了盒子模型(Box Model)：</p>
+<p><img src="https://i.loli.net/2019/12/27/fSnmLGTiyeXz8dP.gif" alt="box-model.gif"></p>
+<ul>
+<li>Margin(外边距) - 清除边框外的区域，外边距是透明的。</li>
+<li>Border(边框) - 围绕在内边距和内容外的边框。</li>
+<li>Padding(内边距) - 清除内容周围的区域，内边距是透明的。</li>
+<li>Content(内容) - 盒子的内容，显示文本和图像。</li>
+</ul>
+<h4 id="那么，这个盒模型的大小是怎么计算的呢？"><a href="#那么，这个盒模型的大小是怎么计算的呢？" class="headerlink" title="那么，这个盒模型的大小是怎么计算的呢？"></a>那么，这个盒模型的大小是怎么计算的呢？</h4><p>那么一般来说，我们在普通的盒模型中，设置的width实际上是Content的宽度。<br>所以此时，如果一个盒子在内容外还额外添加了内外边距以及边框的时候，那么这个盒子的总宽度则应该是：<br>总元素的宽度 = 宽度 + 左填充 + 右填充 + 左边框 + 右边框 + 左边距 + 右边距（*注：此处填充即指内边距）</p>
+<p>也就是说，我们普通盒子的内边距和边框，是会影响到盒子的实际大小的。<br>那么有没有例外的情况呢？<br>答案是有的，下面这就是padding不撑开盒子的情况<br>【注】：当盒子本身没有设置宽度和高度的时候，此时，对盒子设置padding是不会影响到盒子的实际大小的！！！</p>
+<h4 id="关于盒子外边距margin的应用："><a href="#关于盒子外边距margin的应用：" class="headerlink" title="关于盒子外边距margin的应用："></a>关于盒子外边距margin的应用：</h4><p>外边距可以让块级盒子水平居中，但是必须满足两个条件：</p>
+<ul>
+<li>盒子必须制定了宽度（width）</li>
+<li>盒子左右的外边距都设置为auto<br>即：<code>margin：0 auto</code></li>
+</ul>
+<p>如果想让行内元素或者行内块元素水平居中，只需要给其父亲添加<code>text-align:center</code>即可</p>
+<h4 id="外边距合并的问题"><a href="#外边距合并的问题" class="headerlink" title="外边距合并的问题"></a>外边距合并的问题</h4><p>使用margin定义的块级元素的垂直外边距时，可能会出现外边距的合并。主要有两种情况：</p>
+<ul>
+<li>相邻块元素垂直外边距的合并<br>当两个垂直外边距相遇时，他们将形成一个外边距，合并后的外边距高度等于两个发生合并的外边距的高度中的较大者。【注意】：只有普通文档流中块框的垂直外边距才会发生外边距合并，行内框、浮动框或绝对定位之间的外边距不会合并。<br><img src="https://s2.ax1x.com/2019/12/27/lZ2jBT.png" alt="lZ2jBT.png"></li>
+</ul>
+<ul>
+<li>解决方案：只给一个元素margin值</li>
+</ul>
+<ul>
+<li>嵌套块元素垂直外边距的塌陷<br>对于两个嵌套关系（父子关系）的块元素，父元素有上外边距的同时，子元素也设置了上外边距，此时父元素会他先较大的外边距值。<br><img src="https://i.loli.net/2019/12/27/UHCwJPRj9y1MOXQ.png" alt="L3Byb3h5L2h0dHBzL2ltYWdlczIwMTguY25ibG9ncy5jb20vYmxvZy8xNDI0MDM1LzIwMTgwNy8xNDI0MDM1LTIwMTgwNzE0MjI0MzM0NTYwLTE2Mjg1NDMxODkucG5n.png"><br>解决方案：</li>
+</ul>
+<ul>
+<li>1.可以给父元素定义上边框</li>
+<li>2.给父元素定义内边距</li>
+<li>3.给父元素添加<code>overflow:hidden</code></li>
+</ul>
+<h2 id="怪异盒和普通盒的区别"><a href="#怪异盒和普通盒的区别" class="headerlink" title="怪异盒和普通盒的区别"></a>怪异盒和普通盒的区别</h2><p>很明显，在普通盒子模型中，由于种种原因，比如边框和填充会使得盒子撑破，导致我们在网页布局中可能会造成其他元素的错位，或者在完成某些需求的时候需要花费大量精力去计算内外边距边框和内容的占比，进而导致开发效率受限。</p>
+<p>所以，在CSS3中，官方为我们带来了一种新的盒子模型，我们称之为IE盒子模型（或者怪异盒子模型），而把之前的普通盒子称作标准盒子模型。</p>
+<p>在CSS3中，我们可以通过<code>box-sizing</code>来置顶盒模型类型，即可指定为<code>content-box(标准盒模型)</code>和<code>border-box(IE盒模型)</code>，这样一来，我们计算盒子大小的方式就发生了改变。</p>
+<h4 id="标准盒模型content-box："><a href="#标准盒模型content-box：" class="headerlink" title="标准盒模型content-box："></a>标准盒模型content-box：</h4><p><img src="https://i.loli.net/2019/12/27/c1D3aAmMLKN9Hg5.png" alt="79178-3b1a13f5c8b993ef.png"><br>width = content</p>
+<h4 id="IE盒模型："><a href="#IE盒模型：" class="headerlink" title="IE盒模型："></a>IE盒模型：</h4><p><img src="https://s2.ax1x.com/2019/12/27/lZ4yl9.png" alt="lZ4yl9.png"><br>width = content + paddings + borders</p>
 
       
 
@@ -430,7 +274,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color5">HTML</a>
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color4">CSS</a>
         		</li>
       		
 		</ul>
@@ -486,7 +330,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://cheungkooho.github.io/2019/11/17/HTML%E5%9F%BA%E7%A1%80%E6%A0%87%E7%AD%BE/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://cheungkooho.github.io/2019/12/27/%E7%9C%8B%E9%80%8F%E7%BD%91%E9%A1%B5%E5%B8%83%E5%B1%80%E6%9C%AC%E8%B4%A8%E2%80%94%E2%80%94%E2%80%94%E2%80%94CSS%E7%9B%92%E6%A8%A1%E5%9E%8B%E8%AF%A6%E8%A7%A3/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -500,18 +344,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/11/18/web%E7%BD%91%E9%A1%B5%E7%89%88%E7%AE%80%E6%98%93%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E5%AE%9E%E7%8E%B0/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          web网页版简易音乐播放器实现
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/11/16/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E7%AE%80%E8%A6%81%E8%A7%84%E5%88%99/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Markdown语法的简要规则</div>
+    <a href="/2019/12/26/HTML5%E7%9A%84%E8%AF%AD%E4%B9%89%E5%8C%96%E7%90%86%E8%A7%A3/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">HTML5的语义化理解</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -538,7 +373,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML基础标签"><span class="toc-number">1.</span> <span class="toc-text">HTML基础标签</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#lt-DOCTYPE-gt-标签"><span class="toc-number">1.1.</span> <span class="toc-text">&lt;!DOCTYPE&gt; 标签</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#定义和用法"><span class="toc-number">1.1.0.1.</span> <span class="toc-text">定义和用法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#提示和注释"><span class="toc-number">1.1.0.2.</span> <span class="toc-text">提示和注释</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lt-html-gt-标签"><span class="toc-number">1.2.</span> <span class="toc-text">&lt;html&gt; 标签</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#定义和用法-1"><span class="toc-number">1.2.0.1.</span> <span class="toc-text">定义和用法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#提示和注释-1"><span class="toc-number">1.2.0.2.</span> <span class="toc-text">提示和注释</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#属性"><span class="toc-number">1.2.0.3.</span> <span class="toc-text">属性</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lt-title-gt-标签"><span class="toc-number">1.3.</span> <span class="toc-text">&lt;title&gt; 标签</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#定义和用法-2"><span class="toc-number">1.3.0.1.</span> <span class="toc-text">定义和用法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#提示和注释-2"><span class="toc-number">1.3.0.2.</span> <span class="toc-text">提示和注释</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#标准属性"><span class="toc-number">1.3.0.3.</span> <span class="toc-text">标准属性</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lt-body-gt-标签"><span class="toc-number">1.4.</span> <span class="toc-text">&lt;body&gt; 标签</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#定义和用法-3"><span class="toc-number">1.4.0.1.</span> <span class="toc-text">定义和用法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#HTML-与-XHTML-之间的差异"><span class="toc-number">1.4.0.2.</span> <span class="toc-text">HTML 与 XHTML 之间的差异</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#可选的属性"><span class="toc-number">1.4.0.3.</span> <span class="toc-text">可选的属性</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lt-h1-gt-到-lt-h6-gt-标签"><span class="toc-number">1.5.</span> <span class="toc-text">&lt;h1&gt; 到 &lt;h6&gt; 标签</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#定义和用法-4"><span class="toc-number">1.5.0.1.</span> <span class="toc-text">定义和用法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#标准属性-1"><span class="toc-number">1.5.0.2.</span> <span class="toc-text">标准属性</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#事件属性"><span class="toc-number">1.5.1.</span> <span class="toc-text">事件属性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lt-p-gt-标签"><span class="toc-number">1.6.</span> <span class="toc-text">&lt;p&gt; 标签</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#定义和用法-5"><span class="toc-number">1.6.0.1.</span> <span class="toc-text">定义和用法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lt-br-gt-标签"><span class="toc-number">1.7.</span> <span class="toc-text">&lt;br&gt; 标签</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#定义和用法-6"><span class="toc-number">1.7.0.1.</span> <span class="toc-text">定义和用法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#clear-属性"><span class="toc-number">1.7.0.2.</span> <span class="toc-text">clear 属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#提示和注释-3"><span class="toc-number">1.7.0.3.</span> <span class="toc-text">提示和注释</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lt-hr-gt-标签"><span class="toc-number">1.8.</span> <span class="toc-text">&lt;hr&gt; 标签</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#定义和用法-7"><span class="toc-number">1.8.0.1.</span> <span class="toc-text">定义和用法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#可选的属性-1"><span class="toc-number">1.8.0.2.</span> <span class="toc-text">可选的属性</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lt-gt-标签"><span class="toc-number">1.9.</span> <span class="toc-text">&lt;!--...--&gt;标签</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#定义和用法-8"><span class="toc-number">1.9.0.1.</span> <span class="toc-text">定义和用法</span></a></li></ol></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#盒模型的组成部分"><span class="toc-number">1.</span> <span class="toc-text">盒模型的组成部分</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#那么，这个盒模型的大小是怎么计算的呢？"><span class="toc-number">1.0.1.</span> <span class="toc-text">那么，这个盒模型的大小是怎么计算的呢？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#关于盒子外边距margin的应用："><span class="toc-number">1.0.2.</span> <span class="toc-text">关于盒子外边距margin的应用：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#外边距合并的问题"><span class="toc-number">1.0.3.</span> <span class="toc-text">外边距合并的问题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#怪异盒和普通盒的区别"><span class="toc-number">2.</span> <span class="toc-text">怪异盒和普通盒的区别</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#标准盒模型content-box："><span class="toc-number">2.0.1.</span> <span class="toc-text">标准盒模型content-box：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IE盒模型："><span class="toc-number">2.0.2.</span> <span class="toc-text">IE盒模型：</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
