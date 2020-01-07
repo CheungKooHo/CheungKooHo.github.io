@@ -6,17 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://cheungkooho.github.io">
-  <title>CheungKooHo&#39;s Blog</title>
+  <title>JS数据类型总结 | CheungKooHo&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="鲁东大学计算机本15级，科班出生野生前端程序员。退伍军人，爱好摄影。">
-<meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
-<meta property="og:type" content="website">
-<meta property="og:title" content="CheungKooHo&#39;s Blog">
-<meta property="og:url" content="https:&#x2F;&#x2F;cheungkooho.github.io&#x2F;page&#x2F;2&#x2F;index.html">
+  <meta name="description" content="在ES6之前，JavaScript中有6种数据类型，其中5种简单数据类型（也称基本数据类型）：Undefined Null Boolean Number String；和一种复杂数据类型（也称引用数据类型）：Object。而在ES6中，又新增了一种简单数据类型:symbol。">
+<meta name="keywords" content="JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS数据类型总结">
+<meta property="og:url" content="https:&#x2F;&#x2F;cheungkooho.github.io&#x2F;2020&#x2F;01&#x2F;07&#x2F;JS%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%80%BB%E7%BB%93&#x2F;index.html">
 <meta property="og:site_name" content="CheungKooHo&#39;s Blog">
-<meta property="og:description" content="鲁东大学计算机本15级，科班出生野生前端程序员。退伍军人，爱好摄影。">
+<meta property="og:description" content="在ES6之前，JavaScript中有6种数据类型，其中5种简单数据类型（也称基本数据类型）：Undefined Null Boolean Number String；和一种复杂数据类型（也称引用数据类型）：Object。而在ES6中，又新增了一种简单数据类型:symbol。">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2020&#x2F;01&#x2F;07&#x2F;AIwhtSkgLeQOPUG.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2020&#x2F;01&#x2F;07&#x2F;xykFJ7j2QI3pnGT.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2020&#x2F;01&#x2F;07&#x2F;wERiXnczp7ZSGrC.png">
+<meta property="og:updated_time" content="2020-01-07T08:23:59.385Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2020&#x2F;01&#x2F;07&#x2F;AIwhtSkgLeQOPUG.png">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -147,197 +152,130 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-web网页版简易音乐播放器实现" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-JS数据类型总结" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/18/web%E7%BD%91%E9%A1%B5%E7%89%88%E7%AE%80%E6%98%93%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E5%AE%9E%E7%8E%B0/">web网页版简易音乐播放器实现</a>
+    <h1 class="article-title" itemprop="name">
+      JS数据类型总结
     </h1>
   
 ,
 				<!--显示阅读次数-->
 				
+				  <br/>
+				  <a class="cloud-tie-join-count" href="#" style="color:gray;font-size:14px;">
+				  <span class="icon-sort"></span>
+				  <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
+				            阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+				  </span>
+				  </a>
+				
 				<!--显示阅读次数完毕-->
         
-        <a href="/2019/11/18/web%E7%BD%91%E9%A1%B5%E7%89%88%E7%AE%80%E6%98%93%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E5%AE%9E%E7%8E%B0/" class="archive-article-date">
-  	<time datetime="2019-11-18T13:20:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-18</time>
+        <a href="/2020/01/07/JS%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%80%BB%E7%BB%93/" class="archive-article-date">
+  	<time datetime="2020-01-07T07:20:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-07</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="下面我们做一个网页版简易音乐播放器"><a href="#下面我们做一个网页版简易音乐播放器" class="headerlink" title="下面我们做一个网页版简易音乐播放器"></a>下面我们做一个网页版简易音乐播放器</h2><p>Lat’s do it!</p>
-        
-          <a class="article-more-a" href="/2019/11/18/web%E7%BD%91%E9%A1%B5%E7%89%88%E7%AE%80%E6%98%93%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E5%AE%9E%E7%8E%B0/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color5">小玩意儿</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/18/web%E7%BD%91%E9%A1%B5%E7%89%88%E7%AE%80%E6%98%93%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E5%AE%9E%E7%8E%B0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0);" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-HTML基础标签" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/17/HTML%E5%9F%BA%E7%A1%80%E6%A0%87%E7%AD%BE/">HTML基础标签</a>
-    </h1>
-  
-,
-				<!--显示阅读次数-->
-				
-				<!--显示阅读次数完毕-->
-        
-        <a href="/2019/11/17/HTML%E5%9F%BA%E7%A1%80%E6%A0%87%E7%AD%BE/" class="archive-article-date">
-  	<time datetime="2019-11-17T12:57:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="HTML基础标签"><a href="#HTML基础标签" class="headerlink" title="HTML基础标签"></a>HTML基础标签</h1>
-        
-          <a class="article-more-a" href="/2019/11/17/HTML%E5%9F%BA%E7%A1%80%E6%A0%87%E7%AD%BE/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color5">HTML</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/17/HTML%E5%9F%BA%E7%A1%80%E6%A0%87%E7%AD%BE/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0);" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Markdown语法的简要规则" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/16/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E7%AE%80%E8%A6%81%E8%A7%84%E5%88%99/">Markdown语法的简要规则</a>
-    </h1>
-  
-,
-				<!--显示阅读次数-->
-				
-				<!--显示阅读次数完毕-->
-        
-        <a href="/2019/11/16/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E7%AE%80%E8%A6%81%E8%A7%84%E5%88%99/" class="archive-article-date">
-  	<time datetime="2019-11-15T16:33:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Markdown简介"><a href="#Markdown简介" class="headerlink" title="Markdown简介"></a>Markdown简介</h2><blockquote>
-<p>Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。<br>它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档。<br>这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。<br>由于Markdown的轻量化、易读易写特性，并且对于图片，图表、数学式都有支持，当前许多网站都广泛使用 Markdown 来撰写帮助文档或是用于论坛上发表消息。<br>例如：GitHub、reddit、Diaspora、Stack Exchange、OpenStreetMap 、SourceForge等。甚至Markdown能被使用来撰写电子书。</p>
+        <p>在ES6之前，JavaScript中有6种数据类型，其中5种简单数据类型（也称基本数据类型）：Undefined Null Boolean Number String；和一种复杂数据类型（也称引用数据类型）：Object。而在ES6中，又新增了一种简单数据类型:symbol。</p>
+<a id="more"></a>
+<p>以下是JavaScript高级程序设计（第三版），就是俗称的小红书中对数据类型的定义：</p>
+<blockquote>
+<p><img src="https://i.loli.net/2020/01/07/AIwhtSkgLeQOPUG.png" alt="数据类型.png"><br>下面我们就来看看在JS中的数据类型究竟是长什么样的？</p>
 </blockquote>
-        
-          <a class="article-more-a" href="/2019/11/16/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E7%AE%80%E8%A6%81%E8%A7%84%E5%88%99/#more">more >></a>
-        
+<h2 id="ES6之前的数据类型"><a href="#ES6之前的数据类型" class="headerlink" title="ES6之前的数据类型"></a>ES6之前的数据类型</h2><p>如上所说：ES6之前JavaScript中有6种数据类型：数字（number）、字符串（string）、布尔值（boolean）、undefined、null、对象（Object）。</p>
+<h3 id="简单数据类型"><a href="#简单数据类型" class="headerlink" title="简单数据类型"></a>简单数据类型</h3><h4 id="Undefined"><a href="#Undefined" class="headerlink" title="Undefined"></a>Undefined</h4><blockquote>
+<p>全局属性undefined表示原始值undefined。它是一个JavaScript的 原始数据类型 。<br>undefined是全局对象的一个属性。也就是说，它是全局作用域的一个变量。undefined的最初值就是原始数据类型undefined。<br>一个没有被赋值的变量的类型是undefined。如果方法或者是语句中操作的变量没有被赋值，则会返回undefined。<br>一个函数如果没有使用return语句指定返回值，就会返回一个undefined值。</p>
+</blockquote>
+<h4 id="Null"><a href="#Null" class="headerlink" title="Null"></a>Null</h4><blockquote>
+<p>值 null 特指对象的值未设置。它是 JavaScript 基本类型 之一，在布尔运算中被认为是falsy。<br>值 null 是一个字面量，不像 undefined，它不是全局对象的一个属性。null 是表示缺少的标识，指示变量未指向任何对象。把 null 作为尚未创建的对象，也许更好理解。在 API 中，null 常在返回类型应是一个对象，但没有关联的值的地方使用。<br><strong>null 与 undefined 的不同点：当检测 null 或 undefined 时，注意相等（==）与全等（===）两个操作符的区别 ，前者会执行类型转换</strong></p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">typeof null        // &quot;object&quot; (因为一些以前的原因而不是&apos;null&apos;)</span><br><span class="line">typeof undefined   // &quot;undefined&quot;</span><br><span class="line">null === undefined // false</span><br><span class="line">null  == undefined // true</span><br><span class="line">null === null // true</span><br><span class="line">null == null // true</span><br><span class="line">!null //true</span><br><span class="line">isNaN(1 + null) // false</span><br><span class="line">isNaN(1 + undefined) // true</span><br></pre></td></tr></table></figure>
+<h4 id="Boolean"><a href="#Boolean" class="headerlink" title="Boolean"></a>Boolean</h4><blockquote>
+<p>布尔表示一个逻辑实体，可以有两个值：true 和 false。</p>
+</blockquote>
+<h4 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h4><blockquote>
+<p>根据 ECMAScript 标准，JavaScript 中只有一种数字类型：基于 IEEE 754 标准的双精度 64 位二进制格式的值（-(253 -1) 到 253 -1）。它并没有为整数给出一种特定的类型。除了能够表示浮点数外，还有一些带符号的值：+Infinity，-Infinity 和 NaN (非数值，Not-a-Number)。</p>
+</blockquote>
+<h4 id="String"><a href="#String" class="headerlink" title="String"></a>String</h4><blockquote>
+<p>JavaScript的字符串类型用于表示文本数据。它是一组16位的无符号整数值的“元素”。在字符串中的每个元素占据了字符串的位置。第一个元素的索引为0，下一个是索引1，依此类推。字符串的长度是它的元素的数量。<br><em>不同于类 C 语言，JavaScript 字符串是不可更改的。这意味着字符串一旦被创建，就不能被修改。但是，可以基于对原始字符串的操作来创建新的字符串。</em></p>
+</blockquote>
+<h3 id="复杂数据类型"><a href="#复杂数据类型" class="headerlink" title="复杂数据类型"></a>复杂数据类型</h3><h4 id="Object"><a href="#Object" class="headerlink" title="Object"></a>Object</h4><p>对象类型包括：数组（Array）、函数（Function）、还有两个特殊的对象：正则（RegExp）和日期（Date）。</p>
+<h2 id="判断数据类型的方法"><a href="#判断数据类型的方法" class="headerlink" title="判断数据类型的方法"></a>判断数据类型的方法</h2><p>先放一张图<br><img src="https://i.loli.net/2020/01/07/xykFJ7j2QI3pnGT.png" alt="数据类型判断.png"></p>
+<h3 id="1-typeof"><a href="#1-typeof" class="headerlink" title="1.typeof"></a>1.typeof</h3><p>typeof返回一个表示数据类型的字符串，返回结果包括：number、string、boolean、object、undefined、function。</p>
+<h4 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h4><p>typeof 运算符后接操作数：</p>
+<ul>
+<li>typeof operand</li>
+<li>typeof(operand)</li>
+</ul>
+<p><em>详细用法可以参考MDN</em><br>typeof可以对基本类型number、string  、boolean、undefined做出准确的判断（null除外，typeof null===“object”，这是由于历史的原因，我就不巴拉巴拉了，其实我也说不清楚😢）；而对于引用类型，除了function之外返回的都是object。但当我们需要知道某个对象的具体类型时，typeof就显得有些力不从心了。</p>
+<h3 id="2-instanceof"><a href="#2-instanceof" class="headerlink" title="2.instanceof"></a>2.instanceof</h3><p>当我们需要知道某个对象的具体类型时,可以用运算符 instanceof，instanceof操作符判断左操作数对象的原型链上是否有右边这个构造函数的prototype属性，也就是说指定对象是否是某个构造函数的实例，最后返回布尔值。其原理如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">模拟instanceof的内部实现过程：</span><br><span class="line">instanceof (A,B) = &#123;</span><br><span class="line">    var L = A.__proto__;</span><br><span class="line">    var R = B.prototype;</span><br><span class="line">    if(L === R) &#123;</span><br><span class="line">        //A的内部属性__proto__指向B的原型对象</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">    return false;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>从上述过程可以看出，当 A 的 <code>__proto__</code> 指向 B 的 <code>prototype</code> 时，就认为A就是B的实例，我们再来看几个例子：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[] instanceof Array; //true</span><br><span class="line">[] instanceof Object; //true</span><br></pre></td></tr></table></figure>
+<p>我们发现，虽然 instanceof 能够判断出 [] 是Array的实例，但它认为 [] 也是Object的实例，为什么<br><img src="https://i.loli.net/2020/01/07/wERiXnczp7ZSGrC.png" alt="原型.png"><br>从原型链可以看出，[] 的 <strong>proto</strong>  直接指向Array.prototype, 间接指向Object.prototype, 所以按照 instanceof 的判断规则，[] 就是Object的实例。<br><strong>【注意】</strong>：instanceof运算符只能用于对象，不适用原始类型的值。</p>
+<h3 id="3-constructor"><a href="#3-constructor" class="headerlink" title="3.constructor"></a>3.constructor</h3><p>constructor属性的作用是，可以得知某个实例对象，到底是哪一个构造函数产生的。<br>例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var f = new F();</span><br><span class="line">f.constructor === F;// true</span><br></pre></td></tr></table></figure>
+<p>但是 constructor 属性易变，不可信赖，这个主要体现在自定义对象上，当开发者重写prototype后，原有的constructor会丢失。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function F() &#123;&#125;</span><br><span class="line">F.prototype = &#123;</span><br><span class="line">	_name: &apos;Eric&apos;,</span><br><span class="line">&#125;;</span><br><span class="line">var f = new F();</span><br><span class="line">f.constructor === F; // false</span><br></pre></td></tr></table></figure>
+<p>因此，为了规范，在重写对象原型时一般都需要重新给constructor赋值，以保证实例对象的类型不被改写。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function F() &#123;&#125;</span><br><span class="line">F.prototype = &#123;</span><br><span class="line">    constructor: F, </span><br><span class="line">   _name: &apos;Eric&apos;,</span><br><span class="line">&#125;;</span><br><span class="line">var f = new F();</span><br><span class="line">f.constructor === F; // true</span><br></pre></td></tr></table></figure>
+<h3 id="小结："><a href="#小结：" class="headerlink" title="小结："></a>小结：</h3><ul>
+<li>typeof可以准确地判断出基本类型，但是对于引用类型除function之外返回的都是object；</li>
+<li>已知是引用类型的情况可以选用instanceof或constructor方法进行具体类型的判断：</li>
+</ul>
+<ul>
+<li>instanceof是基于原型链的；</li>
+<li>constructor 属性易变，不可信赖，为了规范，在重写对象原型时一般都需要重新给constructor赋值，以保证实例对象的类型不被改写；</li>
+</ul>
+<h2 id="ES6新增的Symbol-符号类型"><a href="#ES6新增的Symbol-符号类型" class="headerlink" title="ES6新增的Symbol(符号类型)"></a>ES6新增的Symbol(符号类型)</h2><blockquote>
+<p>符号(Symbols)是ECMAScript 第6版新定义的。符号类型是唯一的并且是不可修改的, 并且也可以用来作为Object的key的值. 在某些语言当中也有类似的原子类型(Atoms). 你也可以认为为它们是C里面的枚举类型.<br>symbol 是一种基本数据类型 （primitive data type）。Symbol()函数会返回symbol类型的值，该类型具有静态属性和静态方法。它的静态属性会暴露几个内建的成员对象；它的静态方法会暴露全局的symbol注册，且类似于内建对象类，但作为构造函数来说它并不完整，因为它不支持语法：”new Symbol()”。</p>
+</blockquote>
+<p>每个从Symbol()返回的symbol值都是唯一的。一个symbol值能作为对象属性的标识符；这是该数据类型仅有的目的。</p>
+<h2 id="BigInt"><a href="#BigInt" class="headerlink" title="BigInt"></a>BigInt</h2><p>呃呃，不过好像前段时间又提出了一种新的基本数据类型：BigInt。</p>
+<blockquote>
+<p>BigInt数据类型的目的是比Number数据类型支持的范围更大的整数值。在对大整数执行数学运算时，以任意精度表示整数的能力尤为重要。使用BigInt，整数溢出将不再是问题。<br>BigInt目前是第3阶段提案， 一旦添加到规范中，它就是JS 第二个数字数据类型，也将是 JS 第8种基本数据类型。</p>
+</blockquote>
+
       
 
+      
+        <div class="page-reward">
+          <a href="#" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/weixin.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -348,7 +286,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color4">Markdown</a>
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">JavaScript</a>
         		</li>
       		
 		</ul>
@@ -357,16 +295,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/16/Markdown%E8%AF%AD%E6%B3%95%E7%9A%84%E7%AE%80%E8%A6%81%E8%A7%84%E5%88%99/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://cheungkooho.github.io/2020/01/07/JS%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%80%BB%E7%BB%93/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2020/01/02/Vue%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Vue知识点整理</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -381,96 +378,53 @@
         </div>
         
         
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/15/hello-world/">Hello World</a>
-    </h1>
-  
-,
-				<!--显示阅读次数-->
-				
-				<!--显示阅读次数完毕-->
-        
-        <a href="/2019/11/15/hello-world/" class="archive-article-date">
-  	<time datetime="2019-11-15T09:30:29.139Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/15/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0);" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#ES6之前的数据类型"><span class="toc-number">1.</span> <span class="toc-text">ES6之前的数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#简单数据类型"><span class="toc-number">1.1.</span> <span class="toc-text">简单数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Undefined"><span class="toc-number">1.1.1.</span> <span class="toc-text">Undefined</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Null"><span class="toc-number">1.1.2.</span> <span class="toc-text">Null</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Boolean"><span class="toc-number">1.1.3.</span> <span class="toc-text">Boolean</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Number"><span class="toc-number">1.1.4.</span> <span class="toc-text">Number</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#String"><span class="toc-number">1.1.5.</span> <span class="toc-text">String</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#复杂数据类型"><span class="toc-number">1.2.</span> <span class="toc-text">复杂数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Object"><span class="toc-number">1.2.1.</span> <span class="toc-text">Object</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#判断数据类型的方法"><span class="toc-number">2.</span> <span class="toc-text">判断数据类型的方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-typeof"><span class="toc-number">2.1.</span> <span class="toc-text">1.typeof</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#语法"><span class="toc-number">2.1.1.</span> <span class="toc-text">语法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-instanceof"><span class="toc-number">2.2.</span> <span class="toc-text">2.instanceof</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-constructor"><span class="toc-number">2.3.</span> <span class="toc-text">3.constructor</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#小结："><span class="toc-number">2.4.</span> <span class="toc-text">小结：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ES6新增的Symbol-符号类型"><span class="toc-number">3.</span> <span class="toc-text">ES6新增的Symbol(符号类型)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#BigInt"><span class="toc-number">4.</span> <span class="toc-text">BigInt</span></a></li></ol>
+                    </div>
+                </span>
             </div>
         </div>
         
-        
     </div>
 </aside>
 
 
 
+  
+  
+  
+
+  
+
+  
 
   
   
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-    </nav>
-  
+        <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+
+<script>
+var gitalk = new Gitalk({
+  clientID: 'your clientID',
+  clientSecret: 'your clientSecret',
+  repo: 'git_comment',
+  owner: 'findtheonlyway',
+  admin: ['erbiduo'],
+  id: md5(window.location.pathname),
+  distractionFreeMode: true
+})
+
+gitalk.render('gitalk-container')
+</script>
+    
 
 
           </div>
@@ -494,8 +448,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
