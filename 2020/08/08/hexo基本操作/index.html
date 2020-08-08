@@ -6,17 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://cheungkooho.github.io">
-  <title>CheungKooHo&#39;s Blog</title>
+  <title>hexo基本操作 | CheungKooHo&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="鲁东大学计算机本15级，科班出生野生前端程序员。退伍军人，爱好摄影。">
-<meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
-<meta property="og:type" content="website">
-<meta property="og:title" content="CheungKooHo&#39;s Blog">
-<meta property="og:url" content="https:&#x2F;&#x2F;cheungkooho.github.io&#x2F;index.html">
+  <meta name="description" content="hexo文章管理">
+<meta name="keywords" content="hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo基本操作">
+<meta property="og:url" content="https:&#x2F;&#x2F;cheungkooho.github.io&#x2F;2020&#x2F;08&#x2F;08&#x2F;hexo%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C&#x2F;index.html">
 <meta property="og:site_name" content="CheungKooHo&#39;s Blog">
-<meta property="og:description" content="鲁东大学计算机本15级，科班出生野生前端程序员。退伍军人，爱好摄影。">
+<meta property="og:description" content="hexo文章管理">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http:&#x2F;&#x2F;xjm7l2.coding-pages.com&#x2F;blogimages&#x2F;Hexo%E5%8D%9A%E5%AE%A2%E5%86%99%E6%96%87%E7%AB%A0%E5%8F%8A%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C.assets&#x2F;Hexo%E4%B8%ADmd%E6%96%87%E4%BB%B6%E7%9A%84%E4%B8%89%E7%A7%8D%E6%A8%A1%E6%9D%BF.png">
+<meta property="og:updated_time" content="2020-08-08T13:00:52.601Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;xjm7l2.coding-pages.com&#x2F;blogimages&#x2F;Hexo%E5%8D%9A%E5%AE%A2%E5%86%99%E6%96%87%E7%AB%A0%E5%8F%8A%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C.assets&#x2F;Hexo%E4%B8%ADmd%E6%96%87%E4%BB%B6%E7%9A%84%E4%B8%89%E7%A7%8D%E6%A8%A1%E6%9D%BF.png">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -147,20 +150,26 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-hexo基本操作" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-hexo基本操作" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/08/hexo%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">hexo基本操作</a>
+    <h1 class="article-title" itemprop="name">
+      hexo基本操作
     </h1>
   
 ,
 				<!--显示阅读次数-->
+				
+				  <br/>
+				  <a class="cloud-tie-join-count" href="#" style="color:gray;font-size:14px;">
+				  <span class="icon-sort"></span>
+				  <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
+				            阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+				  </span>
+				  </a>
 				
 				<!--显示阅读次数完毕-->
         
@@ -172,12 +181,108 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="hexo文章管理"><a href="#hexo文章管理" class="headerlink" title="hexo文章管理"></a>hexo文章管理</h2>
-        
-          <a class="article-more-a" href="/2020/08/08/hexo%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/#more">more >></a>
-        
+        <h2 id="hexo文章管理"><a href="#hexo文章管理" class="headerlink" title="hexo文章管理"></a>hexo文章管理</h2><a id="more"></a>
+
+<h3 id="1-创建一个md文件"><a href="#1-创建一个md文件" class="headerlink" title="1.创建一个md文件"></a>1.创建一个md文件</h3><blockquote>
+<p><code>hexo new &quot;我的第一篇文章&quot;</code></p>
+</blockquote>
+<h3 id="2-布局（layout）"><a href="#2-布局（layout）" class="headerlink" title="2.布局（layout）"></a>2.布局（layout）</h3><blockquote>
+<ul>
+<li><p>创建md文件时，我们可以指定布局</p>
+<p><code>hexo new page &quot;我的第一篇文章&quot;</code></p>
+</li>
+<li><p>布局有三种：post（文章）、draft（草稿）、page（page）</p>
+<p>新建文件时，hexo会根据scaffolds文件夹内相对应的文件模板来简历md文件【默认使用post布局，可以在站点配置文件中修改default_layout参数来修改默认布局】</p>
+</li>
+</ul>
+<p><img src="http://xjm7l2.coding-pages.com/blogimages/Hexo%E5%8D%9A%E5%AE%A2%E5%86%99%E6%96%87%E7%AB%A0%E5%8F%8A%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C.assets/Hexo%E4%B8%ADmd%E6%96%87%E4%BB%B6%E7%9A%84%E4%B8%89%E7%A7%8D%E6%A8%A1%E6%9D%BF.png" alt="img"></p>
+<ul>
+<li><p>草稿（draft）</p>
+<p>这种布局方式在建立时会被保存到source/——drafts文件夹中，但不会显示在页面上，如果我们不想某一篇文章显示在页面上，那么就可以把它移动到_drafts文件夹中。</p>
+<p>我们可以在启动服务器时候加上–draft参数来查看草稿</p>
+<p><code>hexo server --draft</code></p>
+<p>还可以 在站点配置文件中把render_drafts参数设置未true来预览草稿</p>
+<p>也可以通过publish命令将草稿发布，如果执行该操作它将被移动到指定文件夹</p>
+<p><code>hexo publish post &quot;要发布成文章的草稿&quot;</code></p>
+</li>
+</ul>
+</blockquote>
+<h3 id="3-Front-matter"><a href="#3-Front-matter" class="headerlink" title="3.Front-matter"></a>3.Front-matter</h3><blockquote>
+<ul>
+<li><p>当我们简历一个md文件后，打开后会看到一些头部内容，这些头部内容被称作Front-matter，它是文件最上方以—分割的区域，用于指定个别文件的变量。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hello World # 标题就是我们上面创建的时候指定的名字</span><br><span class="line">date: 2013/7/13 20:46:25 # 文件创建的时间</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Front-matter预定义参数</p>
+<blockquote>
+<p>layout：布局默认为true，如果你不想你的文章被处理，可以设置未false</p>
+<p>title：标题，标题会显示在最上方的居中位置</p>
+<p>date：建立日期，如果不指定则未默认值-文件创建日期，可以自定义</p>
+<p>update：更新日期，如果不指定则为默认值-文件修改后重新生成静态文件的日期</p>
+<p>comments：是否开启文章的评论功能，默认为true</p>
+<p>tags：标签（不适用于page布局）</p>
+<p>categoreies：分类（不适用于page布局）</p>
+<p>permalink：覆盖文章网址</p>
+<p>keywords：仅用于meta标签和 Open Graph的关键字（不推荐使用）</p>
+</blockquote>
+</li>
+<li><p>为文章添加分类和标签</p>
+<p>只有文章（post）支持分类和标签，需要在Front-matter中设置。分类有层级关系，标签没有</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">categories:</span><br><span class="line">- 个人博客（第一层级）</span><br><span class="line">- Hexo博客（第二层级）</span><br><span class="line">tags:</span><br><span class="line">- Hexo</span><br><span class="line">- 博客</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>为文章添加多个分类</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">categories:</span><br><span class="line">- [日常, 生活]</span><br><span class="line">- [日常, 随想]</span><br><span class="line">- [日记]</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h3 id="4-基本操作"><a href="#4-基本操作" class="headerlink" title="4.基本操作"></a>4.基本操作</h3><blockquote>
+<ul>
+<li>常用命令</li>
+</ul>
+<blockquote>
+<p>清除缓存：<code>hexo clean</code></p>
+<p>生成静态文件：<code>hexo generate</code> &amp; <code>hexo g</code></p>
+<p>启动服务器：<code>hexo server</code> &amp; <code>hexo s</code> 【常用参数：-p(–port)重置端口】</p>
+<p>部署：<code>hexo deploy</code> &amp; <code>hexo d</code>，用于将网站部署到服务器上。（暂时用不到，目前都是在本地，后面我们将博客托管到Github Pages或者Gitee Pages时候才会用到此命令）【常用参数：-g(–generate)，如：<code>hexo d -g</code> 部署前预先生成静态文件，等同于<code>hexo g -d</code>】</p>
+</blockquote>
+<ul>
+<li><p>一半文章发布或者修改后都需要这些操作：清除缓存&gt;生成静态文件&gt;启动服务器，测试没问题后再部署</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// 我们可以写成一条命令</span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure></li>
+</ul>
+</blockquote>
+
       
 
+      
+        <div class="page-reward">
+          <a href="#" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/weixin.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -197,16 +302,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/08/08/hexo%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://cheungkooho.github.io/2020/08/08/hexo%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2020/01/12/JS%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85%E9%97%AE%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JS中的闭包问题</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -221,571 +385,53 @@
         </div>
         
         
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-JS中的闭包问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/12/JS%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85%E9%97%AE%E9%A2%98/">JS中的闭包问题</a>
-    </h1>
-  
-,
-				<!--显示阅读次数-->
-				
-				<!--显示阅读次数完毕-->
-        
-        <a href="/2020/01/12/JS%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2020-01-12T14:10:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-12</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>如果这里有个需求，即写一个计数器的函数，每调用一次计数器返回值加一：<br>如何实现，我们可以先简单的写一下：</p>
-        
-          <a class="article-more-a" href="/2020/01/12/JS%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85%E9%97%AE%E9%A2%98/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/01/12/JS%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85%E9%97%AE%E9%A2%98/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0);" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo文章管理"><span class="toc-number">1.</span> <span class="toc-text">hexo文章管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-创建一个md文件"><span class="toc-number">1.1.</span> <span class="toc-text">1.创建一个md文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-布局（layout）"><span class="toc-number">1.2.</span> <span class="toc-text">2.布局（layout）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-Front-matter"><span class="toc-number">1.3.</span> <span class="toc-text">3.Front-matter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-基本操作"><span class="toc-number">1.4.</span> <span class="toc-text">4.基本操作</span></a></li></ol></li></ol>
+                    </div>
+                </span>
             </div>
         </div>
         
-        
     </div>
 </aside>
 
 
 
+  
+  
+  
 
   
-    <article id="post-JS数据类型总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+
+  
+
+  
+  
+        <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+
+<script>
+var gitalk = new Gitalk({
+  clientID: 'your clientID',
+  clientSecret: 'your clientSecret',
+  repo: 'git_comment',
+  owner: 'findtheonlyway',
+  admin: ['erbiduo'],
+  id: md5(window.location.pathname),
+  distractionFreeMode: true
+})
+
+gitalk.render('gitalk-container')
+</script>
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/07/JS%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%80%BB%E7%BB%93/">JS数据类型总结</a>
-    </h1>
-  
-,
-				<!--显示阅读次数-->
-				
-				<!--显示阅读次数完毕-->
-        
-        <a href="/2020/01/07/JS%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%80%BB%E7%BB%93/" class="archive-article-date">
-  	<time datetime="2020-01-07T07:20:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-07</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>在ES6之前，JavaScript中有6种数据类型，其中5种简单数据类型（也称基本数据类型）：Undefined Null Boolean Number String；和一种复杂数据类型（也称引用数据类型）：Object。而在ES6中，又新增了一种简单数据类型:symbol。</p>
-        
-          <a class="article-more-a" href="/2020/01/07/JS%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%80%BB%E7%BB%93/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/01/07/JS%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%80%BB%E7%BB%93/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0);" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Vue知识点整理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/02/Vue%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/">Vue知识点整理</a>
-    </h1>
-  
-,
-				<!--显示阅读次数-->
-				
-				<!--显示阅读次数完毕-->
-        
-        <a href="/2020/01/02/Vue%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/" class="archive-article-date">
-  	<time datetime="2020-01-02T08:27:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>一些vue的基础知识点整理，也是面试常问到的东西。</p>
-        
-          <a class="article-more-a" href="/2020/01/02/Vue%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color4">Vue</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/01/02/Vue%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0);" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-深入理解BFC" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/29/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3BFC/">深入理解BFC</a>
-    </h1>
-  
-,
-				<!--显示阅读次数-->
-				
-				<!--显示阅读次数完毕-->
-        
-        <a href="/2019/12/29/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3BFC/" class="archive-article-date">
-  	<time datetime="2019-12-28T16:27:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-29</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>关于BFC，很多人可能都听说过BFC这个东西，大概知道这是个啥东西，相信很多人对此并没有一个非常细致的了解，本文预计篇幅较长，认真，耐着性子看，应该都能够比较深入的理解BFC这个概念的规则、作用以及用法。</p>
-        
-          <a class="article-more-a" href="/2019/12/29/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3BFC/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/29/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3BFC/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0);" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-看透网页布局本质————CSS盒模型详解" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/27/%E7%9C%8B%E9%80%8F%E7%BD%91%E9%A1%B5%E5%B8%83%E5%B1%80%E6%9C%AC%E8%B4%A8%E2%80%94%E2%80%94%E2%80%94%E2%80%94CSS%E7%9B%92%E6%A8%A1%E5%9E%8B%E8%AF%A6%E8%A7%A3/">看透网页布局本质————CSS盒模型详解</a>
-    </h1>
-  
-,
-				<!--显示阅读次数-->
-				
-				<!--显示阅读次数完毕-->
-        
-        <a href="/2019/12/27/%E7%9C%8B%E9%80%8F%E7%BD%91%E9%A1%B5%E5%B8%83%E5%B1%80%E6%9C%AC%E8%B4%A8%E2%80%94%E2%80%94%E2%80%94%E2%80%94CSS%E7%9B%92%E6%A8%A1%E5%9E%8B%E8%AF%A6%E8%A7%A3/" class="archive-article-date">
-  	<time datetime="2019-12-27T11:56:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>页面布局的学习有三大核心，分别是<em>盒子模型、浮动、定位</em>。<br>CSS的盒模型是CSS的基础，同时也是难点，也是面试的考点。所以，学好盒子模型，就成了前端开发者的重中之重，对盒模型有了正确的认识就能很好的帮助我们布局页面。</p>
-        
-          <a class="article-more-a" href="/2019/12/27/%E7%9C%8B%E9%80%8F%E7%BD%91%E9%A1%B5%E5%B8%83%E5%B1%80%E6%9C%AC%E8%B4%A8%E2%80%94%E2%80%94%E2%80%94%E2%80%94CSS%E7%9B%92%E6%A8%A1%E5%9E%8B%E8%AF%A6%E8%A7%A3/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/27/%E7%9C%8B%E9%80%8F%E7%BD%91%E9%A1%B5%E5%B8%83%E5%B1%80%E6%9C%AC%E8%B4%A8%E2%80%94%E2%80%94%E2%80%94%E2%80%94CSS%E7%9B%92%E6%A8%A1%E5%9E%8B%E8%AF%A6%E8%A7%A3/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0);" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-HTML5的语义化理解" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/26/HTML5%E7%9A%84%E8%AF%AD%E4%B9%89%E5%8C%96%E7%90%86%E8%A7%A3/">HTML5的语义化理解</a>
-    </h1>
-  
-,
-				<!--显示阅读次数-->
-				
-				<!--显示阅读次数完毕-->
-        
-        <a href="/2019/12/26/HTML5%E7%9A%84%E8%AF%AD%E4%B9%89%E5%8C%96%E7%90%86%E8%A7%A3/" class="archive-article-date">
-  	<time datetime="2019-12-26T06:32:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>要解释HTML5的语义化标签，首先我们来看一下什么是Web语义化。</p>
-        
-          <a class="article-more-a" href="/2019/12/26/HTML5%E7%9A%84%E8%AF%AD%E4%B9%89%E5%8C%96%E7%90%86%E8%A7%A3/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color5">HTML</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/26/HTML5%E7%9A%84%E8%AF%AD%E4%B9%89%E5%8C%96%E7%90%86%E8%A7%A3/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0);" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-div+CSS布局中常用标签和属性" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/25/div+CSS%E5%B8%83%E5%B1%80%E4%B8%AD%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE%E5%92%8C%E5%B1%9E%E6%80%A7/">div+CSS布局中常用标签和属性</a>
-    </h1>
-  
-,
-				<!--显示阅读次数-->
-				
-				<!--显示阅读次数完毕-->
-        
-        <a href="/2019/11/25/div+CSS%E5%B8%83%E5%B1%80%E4%B8%AD%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE%E5%92%8C%E5%B1%9E%E6%80%A7/" class="archive-article-date">
-  	<time datetime="2019-11-25T12:06:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>下面这些是div+CSS进行布局时常用的标签和属性</p>
-        
-          <a class="article-more-a" href="/2019/11/25/div+CSS%E5%B8%83%E5%B1%80%E4%B8%AD%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE%E5%92%8C%E5%B1%9E%E6%80%A7/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/25/div+CSS%E5%B8%83%E5%B1%80%E4%B8%AD%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE%E5%92%8C%E5%B1%9E%E6%80%A7/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0);" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
-    </nav>
-  
 
 
           </div>
@@ -809,8 +455,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
