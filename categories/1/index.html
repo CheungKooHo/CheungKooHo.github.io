@@ -6,21 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://cheungkooho.github.io">
-  <title>JS中的闭包问题 | CheungKooHo&#39;s Blog</title>
+  <title>Category: 1 | CheungKooHo&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="如果这里有个需求，即写一个计数器的函数，每调用一次计数器返回值加一：如何实现，我们可以先简单的写一下：">
-<meta name="keywords" content="JavaScript">
-<meta property="og:type" content="article">
-<meta property="og:title" content="JS中的闭包问题">
-<meta property="og:url" content="https:&#x2F;&#x2F;cheungkooho.github.io&#x2F;2020&#x2F;01&#x2F;12&#x2F;JS%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85%E9%97%AE%E9%A2%98&#x2F;index.html">
+  <meta name="description" content="鲁东大学计算机本15级，科班出生野生前端程序员。退伍军人，爱好摄影。">
+<meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CheungKooHo&#39;s Blog">
+<meta property="og:url" content="https:&#x2F;&#x2F;cheungkooho.github.io&#x2F;categories&#x2F;1&#x2F;index.html">
 <meta property="og:site_name" content="CheungKooHo&#39;s Blog">
-<meta property="og:description" content="如果这里有个需求，即写一个计数器的函数，每调用一次计数器返回值加一：如何实现，我们可以先简单的写一下：">
+<meta property="og:description" content="鲁东大学计算机本15级，科班出生野生前端程序员。退伍军人，爱好摄影。">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2020&#x2F;01&#x2F;12&#x2F;VNDJA7e5iuxTaIj.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2020&#x2F;01&#x2F;12&#x2F;6V5TgtD9jRfIJm2.png">
-<meta property="og:updated_time" content="2020-03-11T08:11:21.345Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2020&#x2F;01&#x2F;12&#x2F;VNDJA7e5iuxTaIj.png">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -151,272 +147,75 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-JS中的闭包问题" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      JS中的闭包问题
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2019/11/15/hello-world/" class="archive-article-date">
+  	<time datetime="2019-11-15T09:30:29.139Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-15</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/11/15/hello-world/">Hello World</a>
     </h1>
   
-,
-				<!--显示阅读次数-->
-				
-				  <br/>
-				  <a class="cloud-tie-join-count" href="#" style="color:gray;font-size:14px;">
-				  <span class="icon-sort"></span>
-				  <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
-				            阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
-				  </span>
-				  </a>
-				
-				<!--显示阅读次数完毕-->
-        
-        <a href="/2020/01/12/JS%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2020-01-12T14:10:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-12</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>如果这里有个需求，即写一个计数器的函数，每调用一次计数器返回值加一：<br>如何实现，我们可以先简单的写一下：</p>
-<a id="more"></a>
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var index = 1;</span><br><span class="line">function counter()&#123;</span><br><span class="line">	return index++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这样写的话，确实每次返回一个递增的数。但是它有以下三个问题：</p>
-<ul>
-<li>1.这个 index 放在全局，其他代码可能会对他进行修改</li>
-<li>2.如果我需要同时用两个计数器，但这种写法只能满足一个使用，另一个还想用的话就要再写个 counter2 函数，再定义一个 index2 的全局变量。</li>
-<li>3.计数器是一个功能，我只希望我的代码里有个 counter 函数就好，其他的最好不要出现。这是稍微有点代码洁癖的都会觉得不爽的。</li>
-</ul>
-<p>接下来我们用闭包的方式做一下这个需求：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">function counterCreator() &#123;</span><br><span class="line">    var index = 1;</span><br><span class="line">    function counter() &#123;</span><br><span class="line">        return index ++;</span><br><span class="line">    &#125;</span><br><span class="line">    return counter;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">// test</span><br><span class="line">var counterA = counterCreator();</span><br><span class="line">var counterB = counterCreator();</span><br><span class="line">counterA();     // 1</span><br><span class="line">counterA();     // 2</span><br><span class="line">counterB();     // 1</span><br><span class="line">counterB();     // 2</span><br></pre></td></tr></table></figure>
-<p>这里的 counterCreator 函数只是把上面的几行代码包起来，然后返回了里面的 counter 函数而已。却能同时解决这么多问题，这就是闭包的魅力！</p>
-<h2 id="铺垫知识"><a href="#铺垫知识" class="headerlink" title="铺垫知识"></a>铺垫知识</h2><h3 id="执行上下文"><a href="#执行上下文" class="headerlink" title="执行上下文"></a>执行上下文</h3><p>简而言之，执行上下文是评估和执行 JavaScript 代码的环境的抽象概念。每当 Javascript 代码在运行的时候，它都是在执行上下文中运行。<br>函数每次执行，都会创建一个称为执行上下文的内部对象（AO 对象，可理解为函数作用域），这个 AO 对象会保存这个函数中所有的变量值和该函数内部定义的函数的引用。函数每次执行时对应的执行上下文都是独一无二的，<strong>正常情况下函数执行完毕执行上下文就会被销毁。</strong></p>
-<h3 id="作用域链"><a href="#作用域链" class="headerlink" title="作用域链"></a>作用域链</h3><p>在函数定义的时候，他还获得 [[scope]]。这个是里面包含该函数的作用域链，初始值为引用着上一层作用域链里面所有的作用域，后面执行的时候还会将 AO 对象添加进去 。作用域链就是执行上下文对象的集合，这个集合是链条状的。<br>在函数定义的时候，他还获得 [[scope]]。这个是里面包含该函数的作用域链，初始值为引用着上一层作用域链里面所有的作用域，后面执行的时候还会将 AO 对象添加进去 。作用域链就是执行上下文对象的集合，这个集合是链条状的。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function a () &#123;</span><br><span class="line">    // （1）创建 a函数的AO对象：&#123; x: undfind,  b: function()&#123;...&#125;  , 作用域链上层：window的AO对象&#125;</span><br><span class="line">    var x = 1;</span><br><span class="line">    function b () &#123;</span><br><span class="line">        // （3）创建 b函数的AO对象：&#123; y: undfind , 作用域链上层：a函数AO对象&#125;</span><br><span class="line">        var y = 2;</span><br><span class="line">        // （4）b函数的AO对象：&#123; y: 2 , 作用域链上层：a函数AO对象&#125;</span><br><span class="line">        console.log(x, y);  // 在 b函数的AO对象中没有找到x, 会到a函数AO对象中查找</span><br><span class="line">    &#125;</span><br><span class="line">    //（2）此时 a函数的AO对象：&#123; x: 1,  b: function()&#123;...&#125; , 作用域链上层：window的AO对象&#125;</span><br><span class="line">    b();</span><br><span class="line">&#125;</span><br><span class="line">a();</span><br></pre></td></tr></table></figure>
-<p>正常情况函数每次执行后 AO 对象都被销毁，且每次执行时都是生成新的 AO 对象。我们得出这个结论： 只要是这个函数每次调用的结果不一样，那么这个函数内部一定是使用了函数外部的变量。</p>
-<h3 id="垃圾回收"><a href="#垃圾回收" class="headerlink" title="垃圾回收"></a>垃圾回收</h3><p>如何确定哪些内存需要回收，哪些内存不需要回收，这依赖于活对象这个概念。我们可以这样假定：一个对象为活对象当且仅当它被一个根对象 或另一个活对象指向。根对象永远是活对象。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function a () &#123;</span><br><span class="line">    var x = 1;</span><br><span class="line">    function b () &#123;</span><br><span class="line">        var y = 2;</span><br><span class="line">        // b函数执行完了，b函数AO被销毁，y 被回收</span><br><span class="line">    &#125;</span><br><span class="line">    b();</span><br><span class="line">    //a 函数执行完了，a函数AO被销毁, x 和 b 都被回收</span><br><span class="line">&#125;</span><br><span class="line">a();</span><br><span class="line">// 这里是在全局下，window中的 a 直到页面关闭才被回收。</span><br></pre></td></tr></table></figure>
-
-<h2 id="分析闭包结构"><a href="#分析闭包结构" class="headerlink" title="分析闭包结构"></a>分析闭包结构</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">// 生成闭包的函数</span><br><span class="line">function counterCreator() &#123;</span><br><span class="line"> </span><br><span class="line">    // 被返回函数所依赖的变量</span><br><span class="line">    var index = 1;</span><br><span class="line"> </span><br><span class="line">    // 被返回的函数</span><br><span class="line">     function counter() &#123;</span><br><span class="line">        return index ++;</span><br><span class="line">    &#125;</span><br><span class="line">    return counter;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">// 被赋值为闭包函数</span><br><span class="line">var counterA = counterCreator();</span><br><span class="line"> </span><br><span class="line">// 使用</span><br><span class="line">counterA();</span><br></pre></td></tr></table></figure>
-<p>闭包的创造函数必定包含两部分：</p>
-<ul>
-<li>1.一些闭包函数执行时依赖的变量，每次执行闭包函数时都能访问和修改</li>
-<li>2.返回的函数，这个函数中必定使用到上面所说的那些变量<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// 被赋值的闭包函数</span><br><span class="line">var counterA = counterCreator();</span><br><span class="line">var counterB = counterCreator();</span><br></pre></td></tr></table></figure>
-而上面这两句代码很重要，它其实是把闭包函数赋值给了一个变量，这个变量是一个活对象，这活对象引用了闭包函数，闭包函数又引用了 AO 对象，所以这个时候 AO 对象也是一个活对象。此时闭包函数的作用域链得以保存，不会被垃圾回收机制所回收。<br>当我们想重新创建一个新的计数器时，只需要重新再调用一次 counterCreator， 他会新生成了一个新的执行期上下文，所以 counterB 与 counterA 是互不干扰的。<br>counterCreator执行：<br><img src="https://i.loli.net/2020/01/12/VNDJA7e5iuxTaIj.png" alt="counterCreatorDo.png"><br>counterCreator 执行完毕，返回 counter：<br><img src="https://i.loli.net/2020/01/12/6V5TgtD9jRfIJm2.png" alt="counterCreatorDone-1.png"></li>
-</ul>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>闭包的原理，就是把闭包函数的作用域链保存了下来。</p>
-<h2 id="使用闭包"><a href="#使用闭包" class="headerlink" title="使用闭包"></a>使用闭包</h2><p>一个简单的防抖函数：<br>第一步，先把闭包的架子搭起来，因为我们已经分析了闭包生成函数内部一定有的两部分内容。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function debunce(func, timeout) &#123;</span><br><span class="line">    // 闭包函数执行时依赖的变量，每次执行闭包函数时都能访问和修改</span><br><span class="line">    return function() &#123;</span><br><span class="line">        // 这个函数最终会被赋值给一个变量</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>第二步： 把闭包第一次执行的情况写出来</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">function debunce(func, timeout) &#123;</span><br><span class="line">    timeout = timeout || 300;</span><br><span class="line">    return  function(...args)  &#123;</span><br><span class="line">        var _this = this;</span><br><span class="line">        setTimeout(function () &#123;</span><br><span class="line">            func.apply(_this, args);</span><br><span class="line">        &#125;, timeout);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>第三步： 加上一些判断条件。就像我们最开始写计数器的 index 一样，不过这一次你不是把变量写在全局下，而是写在闭包生成器的内部。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">function debunce(func, timeout) &#123;</span><br><span class="line">    timeout = timeout || 300;</span><br><span class="line">    var timer = null;   // 被闭包函数使用</span><br><span class="line">    return  function(...args)  &#123;</span><br><span class="line">        var _this = this;</span><br><span class="line">        clearTimeout(timer);    // 做一些逻辑让每次执行效果可不一致</span><br><span class="line">        timer  = setTimeout(function () &#123;</span><br><span class="line">            func.apply(_this, args);</span><br><span class="line">        &#125;, timeout);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">// 测试：</span><br><span class="line">function log(...args) &#123;</span><br><span class="line">    console.log(&apos;log: &apos;, args);</span><br><span class="line">&#125;</span><br><span class="line">var d_log = debunce(log, 1000);</span><br><span class="line"> </span><br><span class="line">d_log(1);   // 预期：不输出</span><br><span class="line">d_log(2);   // 预期：1s后输出</span><br><span class="line"> </span><br><span class="line">setTimeout( function () &#123;</span><br><span class="line">    d_log(3);   // 预期：不输出</span><br><span class="line">    d_log(4);   // 预期：1s后输出</span><br><span class="line">&#125;, 1500)</span><br></pre></td></tr></table></figure>
-
-<h2 id="闭包的应运场景"><a href="#闭包的应运场景" class="headerlink" title="闭包的应运场景"></a>闭包的应运场景</h2><p><strong>模块化</strong><br>例 NodeJS 模块化原理：<br>NodeJS 会给每个文件包上这样一层函数，引入模块使用 require，导出使用 exports，而那些文件中定义的变量也将留在这个闭包中，不会污染到其他地方。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(funciton(exports, require, module, __filename, __dirname) &#123;</span><br><span class="line">    /* 自己写的代码  */</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
-<p><strong>高阶函数</strong><br>一些使用闭包的经典例子:</p>
-<ul>
-<li>节流函数</li>
-<li>柯里化（Currying）</li>
-<li>组合（Composing）</li>
-<li>bind 的实现</li>
-</ul>
-
-      
-
-      
-        <div class="page-reward">
-          <a href="#" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/img/alipay.png">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/img/weixin.png">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
+        <div class="article-info info-on-right">
+          
+          
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color1">JavaScript</a>
+        			<a href="/categories/1//" class="article-tag-list-link color2">1</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/1/生活//" class="article-tag-list-link color3">生活</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/2//" class="article-tag-list-link color2">2</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/2/随想//" class="article-tag-list-link color3">随想</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/3//" class="article-tag-list-link color2">3</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://cheungkooho.github.io/2020/01/12/JS%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85%E9%97%AE%E9%A2%98/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2020/08/08/hexo%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          hexo基本操作
-        
-      </div>
-    </a>
   
   
-    <a href="/2020/01/07/JS%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%80%BB%E7%BB%93/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">JS数据类型总结</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0);" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#铺垫知识"><span class="toc-number">1.</span> <span class="toc-text">铺垫知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#执行上下文"><span class="toc-number">1.1.</span> <span class="toc-text">执行上下文</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#作用域链"><span class="toc-number">1.2.</span> <span class="toc-text">作用域链</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#垃圾回收"><span class="toc-number">1.3.</span> <span class="toc-text">垃圾回收</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分析闭包结构"><span class="toc-number">2.</span> <span class="toc-text">分析闭包结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-number">3.</span> <span class="toc-text">总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用闭包"><span class="toc-number">4.</span> <span class="toc-text">使用闭包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#闭包的应运场景"><span class="toc-number">5.</span> <span class="toc-text">闭包的应运场景</span></a></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
-  
-        <div id="gitalk-container"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
-
-<script>
-var gitalk = new Gitalk({
-  clientID: 'your clientID',
-  clientSecret: 'your clientSecret',
-  repo: 'git_comment',
-  owner: 'findtheonlyway',
-  admin: ['erbiduo'],
-  id: md5(window.location.pathname),
-  distractionFreeMode: true
-})
-
-gitalk.render('gitalk-container')
-</script>
     
 
 
@@ -442,10 +241,10 @@ gitalk.render('gitalk-container')
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
-		isCategory: false,
+		isCategory: true,
 		open_in_new: false,
 		toc_hide_index: true,
 		root: "/",
